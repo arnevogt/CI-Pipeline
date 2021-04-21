@@ -46,4 +46,4 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: arnevogt/CI-Pipeline:latest
+        tags: arnevogt/ci-pipeline:latest
