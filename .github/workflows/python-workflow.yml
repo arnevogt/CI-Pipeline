@@ -34,8 +34,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Python Unit Test
       run: |
-        cd test
-        python -m unittest -k 'test_*.py'
+        python -m unittest discover -s ./test
     - name: Login to DockerHub
       uses: docker/login-action@v1 
       with:
